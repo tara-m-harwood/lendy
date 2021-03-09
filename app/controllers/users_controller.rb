@@ -10,7 +10,7 @@ class UsersController < ApplicationController
         render json: @user
     end
 
-    def testing
+    def login
         @user = User.find(params[:id])
         render json: @user
     end
