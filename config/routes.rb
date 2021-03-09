@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'users/login/:username', to: 'users#login'
+
   resources :lends
   resources :borrowers
   resources :items
