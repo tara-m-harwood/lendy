@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    def show
+    def login
         @user = User.find(params[:id])
         render json: @user.to_json(:include => [:items, :lends => {:include => :borrower} ])
     end
