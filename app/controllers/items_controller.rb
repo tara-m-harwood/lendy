@@ -1,5 +1,15 @@
 class ItemsController < ApplicationController
-
+    
+    def index
+        @items = Item.all
+        render json: @items
+    end
+    
+    def show
+        @items = Item.find(params[:id])
+        render json: @items
+    end
+    
     def create
         @item = Item.create(user_id: params[:user_id],
                             name: params[:name],
