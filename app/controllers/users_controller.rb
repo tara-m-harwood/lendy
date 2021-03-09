@@ -10,8 +10,8 @@ class UsersController < ApplicationController
         render json: @user
     end
 
-    def test
-        @user = User.find(params[:id])
+    def testing
+        @user = User.find_by(username: params[:username])
         render json: @user
     end
 
