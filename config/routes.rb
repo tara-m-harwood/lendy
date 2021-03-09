@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'users/login/:username', to: 'users#login'
+  get 'users/test/:username', to: 'users#test'
 
   resources :lends
   resources :borrowers
