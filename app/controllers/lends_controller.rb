@@ -5,14 +5,19 @@ class LendsController < ApplicationController
                             borrower_id: params[:borrower_id],
                             start_date: params[:start_date],
                             end_date: params[:end_date],
-                            complete: params[:complete],
+                            complete: params[:complete]
                            )
         render json: @lend
     end
 
     def update
         @lend = Lend.find(params[:id])
-        @lend.update(complete: params[:complete])
+        @lend.update(item_id: params[:item_id],
+                    borrower_id: params[:borrower_id],
+                    start_date: params[:start_date],
+                    end_date: params[:end_date],
+                    complete: params[:complete]
+                )
         render json: @lend
     end
 
