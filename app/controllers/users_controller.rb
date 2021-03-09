@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     end
 
     def testing
-        @user = User.find_by(username: params[:username])
+        @user = User.find(params[:id])
         render json: @user
     end
 
