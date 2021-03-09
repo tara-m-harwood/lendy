@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     end
 
     def login
-        @user = User.find(params[:id])
+        @user = User.find_by(username: params[:username])
         render json: @user
     end
 
