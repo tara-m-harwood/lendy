@@ -1,9 +1,5 @@
 require_relative 'config/environment'
 
-def test
-    unsorted = Lend.all.map{ |lend| "lend #{lend[:id]} on #{lend[:start_date]}" }
-end
+puts "hello world"
 
-def sort
-
-puts test
+puts User.all
