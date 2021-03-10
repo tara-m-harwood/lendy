@@ -31,4 +31,10 @@ class LendsController < ApplicationController
         render json: @lend
     end
 
+    def destroy
+        @lend = Lend.find_by(id: params[:id])
+        @lend.destroy
+        redirect_to 'https://lendy-tracker.herokuapp.com/destroy.html'
+    end
+
 end

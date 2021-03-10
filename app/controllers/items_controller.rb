@@ -18,4 +18,10 @@ class ItemsController < ApplicationController
         render json: @item
     end
 
+    def destroy
+        @item = Item.find_by(id: params[:id])
+        @item.destroy
+        redirect_to 'https://lendy-tracker.herokuapp.com/destroy.html'
+    end
+
 end
