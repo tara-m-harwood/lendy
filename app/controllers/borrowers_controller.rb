@@ -18,7 +18,7 @@ class BorrowersController < ApplicationController
     def destroy
         @borrower = Borrower.find_by(id: params[:id])
         @borrower.destroy
-        redirect_to 'https://lendy-tracker.herokuapp.com/destroy.html'
+        render json: @borrower
     end
 
 end

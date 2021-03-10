@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     def destroy
         @user = User.find_by(id: params[:id])
         @user.destroy
-        redirect_to 'https://lendy-tracker.herokuapp.com/destroy.html'
+        render json: @user
     end
 
 end
