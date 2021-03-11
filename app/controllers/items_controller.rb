@@ -11,10 +11,13 @@ class ItemsController < ApplicationController
     end
     
     def create
-        @item = Item.create(user_id: params[:user_id],
-                            name: params[:name],
-                            category: params[:category]
-                           )
+        @item = Item.create(item_params)
+        render json: @item
+    end
+
+    def update
+        @item = Item.find(params[:id])
+        @item.update(item_params)
         render json: @item
     end
 
@@ -23,5 +26,11 @@ class ItemsController < ApplicationController
         @item.destroy
         render json: @item
     end
+
+    private
+
+    def item_params
+        params.permit(:user_id, :name, :category, :description, :image_url)
+    end 
 
 end

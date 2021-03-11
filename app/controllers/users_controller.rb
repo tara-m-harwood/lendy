@@ -7,21 +7,18 @@ class UsersController < ApplicationController
     
     def show
         @user = User.find(params[:id])
-        render json: @user.to_json(:include => [:items, :lends => {:include => :borrower} ])
+        render json: @user
     end
     
     def create
-        @user = User.create(username: params[:username])
+        @user = User.create(user_params)
         render json: @user
     end
 
-    def login
-        @user = User.find_by(username: params[:username])
-        render json: @user.to_json( :include => 
-            [:items, :lends => {
-                :include => [:item, :borrower] 
-             } ]
-            )
+    def update
+        @user = User.find(params[:id])
+        @user.update(user_params)
+        render json: @user
     end
 
     def destroy
@@ -29,6 +26,19 @@ class UsersController < ApplicationController
         @user.destroy
         render json: @user
     end
+
+    def login
+        @user = User.find_by(username: params[:username])
+        render json: @user.to_json( :include => 
+            [:items, :lends => { :include => [:item, :borrower]} ]
+            )
+    end
+
+    private
+
+    def user_params
+        params.permit(:username, :email, :password)
+    end  
 
 end
  
