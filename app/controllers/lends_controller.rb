@@ -11,25 +11,9 @@ class LendsController < ApplicationController
     end
     
     def create
-        @lend = Lend.create(item_id: params[:item_id],
-                            borrower_id: params[:borrower_id],
-                            start_date: params[:start_date],
-                            end_date: params[:end_date],
-                            complete: params[:complete]
-                           )
+        @lend = Lend.create(lend_params)
         render json: @lend
     end
-
-    # def update
-    #     @lend = Lend.find(params[:id])
-    #     @lend.update(item_id: params[:item_id],
-    #                 borrower_id: params[:borrower_id],
-    #                 start_date: params[:start_date],
-    #                 end_date: params[:end_date],
-    #                 complete: params[:complete]
-    #             )
-    #     render json: @lend
-    # end
 
     def update
         @lend = Lend.find(params[:id])
@@ -44,11 +28,9 @@ class LendsController < ApplicationController
     end
 
     private
-
+    
     def lend_params
-        params.permit(:start_date, :end_date, :complete)
+        params.permit(:item_id, :borrower_id, :start_date, :end_date, :complete)
     end    
-
-
 
 end

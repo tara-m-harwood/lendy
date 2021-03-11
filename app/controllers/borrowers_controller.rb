@@ -11,7 +11,13 @@ class BorrowersController < ApplicationController
     end
     
     def create
-        @borrower = Borrower.create(name: params[:name])
+        @borrower = Borrower.create(borrower_params)
+        render json: @borrower
+    end
+    
+    def update
+        @borrower = Borrower.find(params[:id])
+        @borrower.update(borrower_params)
         render json: @borrower
     end
 
@@ -20,5 +26,11 @@ class BorrowersController < ApplicationController
         @borrower.destroy
         render json: @borrower
     end
+
+    private
+
+    def borrower_params
+        params.permit(:name, :email)
+    end 
 
 end
