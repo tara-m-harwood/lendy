@@ -12,7 +12,8 @@ class UsersController < ApplicationController
     
     def create
         @user = User.create(user_params)
-        render json: @user
+        login_page = "https://eager-poitras-0eb550.netlify.app/dashboard.html?username=#{@user.username}"
+        redirect_to login_page
     end
 
     def update
