@@ -12,13 +12,13 @@ class ItemsController < ApplicationController
     
     def create
         @item = Item.create(item_params)
-        redirect_back(fallback_location:"/")
+        render json: @item
     end
 
     def update
         @item = Item.find(params[:id])
         @item.update(item_params)
-        redirect_back(fallback_location:"/")
+        render json: @item
     end
 
     def destroy
