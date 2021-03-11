@@ -29,8 +29,11 @@ fetch(baseURL)
             if (lend.complete) {
                 $lendStatus = `It was returned on ${lend.end_date}`
             } else {
-                $lendStatus = `It is due back on ${lend.end_date}`
+                $lendStatus = `It is due back on ${lend.end_date} lend id=${lend.id}`
             }
+
+
+
             $lendContainer.append($lendSummary,$lendStatus)
         })
     })
