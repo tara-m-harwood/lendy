@@ -12,13 +12,13 @@ class ItemsController < ApplicationController
     
     def create
         @item = Item.create(item_params)
-        redirect_back
+        redirect_back(fallback_location:"/")
     end
 
     def update
         @item = Item.find(params[:id])
         @item.update(item_params)
-        redirect_back(fallback_location: 'https://eager-poitras-0eb550.netlify.app/dashboard.html')
+        redirect_back(fallback_location:"/")
     end
 
     def destroy
