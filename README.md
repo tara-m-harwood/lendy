@@ -1,4 +1,4 @@
-# Welcome to Lendy!
+# [Welcome to Lendy!](https://eager-poitras-0eb550.netlify.app/)
 
 ![Lendy logo on a blue gradient circle](/public/Logo.png)
 
@@ -19,7 +19,10 @@ We all want to share the things we have with the people we care about, but somet
 
 Lendy is a lightweight web application that makes it easy for anyone to create a personal inventory of sharable items, keep track of who borrowed them, and know when they are expected back.  With Lendy, your can share your items with confidence, knowing that you won't lose track of your treasures. 
 
-<h4>Lendy: share with care<h4>
+
+This is the repo for the Lendy API backend only.
+
+For the Lendy frontend interface, see [lendy-frontend](https://github.com/philip-haines/lendy-frontend) by Philip Haines.
   
 Lendy was created by Philip Haines and Tara Harwood as a project for Flatiron School's Software Enginering Bootcamp in Denver, CO 
 
