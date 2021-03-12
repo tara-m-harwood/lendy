@@ -8,12 +8,12 @@
 * [Intro Video](#intro-video)
 * [Technologies](#technologies)
 * [Features](#features)
-* [Contact](#features)
+* [Contact](#contact)
 
 ## General info
-We all want to share the things we have with the people we care about, but sometimes it can be difficult to keep track of all our resources.  That's where Lendy comes in.  
+We all want to share the things we have with the people we care about, but it can be a hassle to keep track of all our resources.  That's where Lendy comes in.  
 
-Lendy is a lightweight web application that makes it easy for anyone to create a personal inventory of sharable items, keep track of who borrowed them, and know when they are expected back.  With Lendy, your can share your items with confidence, knowing that you won't lose track of your treasures! 
+Lendy is a lightweight web application that makes it easy for anyone to create a personal inventory of sharable items, keep track of who borrowed them, and know when they are expected back.  With Lendy, you can share your items with confidence, knowing that you won't lose track of your treasures! 
 
 ## Technologies
 This is the repo for the Lendy API backend; for the Lendy frontend interface, see [lendy-frontend](https://github.com/philip-haines/lendy-frontend) by Philip Haines.
@@ -22,13 +22,13 @@ This is the repo for the Lendy API backend; for the Lendy frontend interface, se
 * Ruby
 * Rails
 * Postgres
-* **Deployed with Heroku**
+* **[Deployed with Heroku](https://lendy-tracker.herokuapp.com/)**
 
 **Frontend**
 * HTML 5
 * CSS
 * Javascript
-* **Deployed with Netlify**
+* **[Deployed with Netlify](https://eager-poitras-0eb550.netlify.app/)**
 
 ## Features
 * Create an account to start tracking your lending
