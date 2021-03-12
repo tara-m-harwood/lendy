@@ -5,9 +5,9 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Intro Video](#intro-video)
 * [Technologies](#technologies)
 * [Features](#features)
+* [ERD](#erd)
 * [Contact](#contact)
 
 ## General info
@@ -29,6 +29,10 @@ This is the repo for the Lendy API backend; for the Lendy frontend interface, se
 * CSS
 * Javascript
 * **[Deployed with Netlify](https://eager-poitras-0eb550.netlify.app/)**
+
+## Entity Relationship Diagram (ERD)
+
+![Diagram showing the 4 entity classes with their fields and relatioships](/public/erd.png)
 
 ## Features
 * Create an account to start tracking your lending
