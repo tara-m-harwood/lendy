@@ -16,7 +16,7 @@ We all want to share the things we have with the people we care about, but it ca
 Lendy is a lightweight web application that makes it easy for anyone to create a personal inventory of sharable items, keep track of who borrowed them, and know when they are expected back.  With Lendy, you can share your items with confidence, knowing that you won't lose track of your treasures! 
 
 ## Technologies
-This is the repo for the Lendy API backend; for the Lendy frontend interface, see [lendy-frontend](https://github.com/philip-haines/lendy-frontend) by Philip Haines.
+This is the repo for the Lendy API backend; for the Lendy frontend interface, see [lendy-frontend](https://github.com/philip-haines/lendy-frontend)
 
 *Backend*
 * Ruby
