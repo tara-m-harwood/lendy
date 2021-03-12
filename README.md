@@ -30,15 +30,15 @@ This is the repo for the Lendy API backend; for the Lendy frontend interface, se
 * Javascript
 * **[Deployed with Netlify](https://eager-poitras-0eb550.netlify.app/)**
 
-## Entity Relationship Diagram (ERD)
-
-![Diagram showing the 4 entity classes with their fields and relatioships](/public/erd.png)
-
 ## Features
 * Create an account to start tracking your lending
 * Add items to your inventory
 * Track loans by borrower, start date, and end date
 * Extend loans or mark them complete
+
+## Entity Relationship Diagram (ERD)
+
+![Diagram showing the 4 entity classes with their fields and relatioships](/public/erd.png)
 
 ## Contact
 Lendy was created by [Philip Haines](https://www.linkedin.com/in/philip-haines/) and [Tara Harwood](https://www.linkedin.com/in/taraharwood/) as a Week 6 project for Flatiron School's Software Enginering Bootcamp in Denver, CO 
