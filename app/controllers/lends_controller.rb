@@ -18,7 +18,7 @@ class LendsController < ApplicationController
     def update
         @lend = Lend.find(params[:id])
         @lend.update(lend_params)
-        redirect_back
+        render json: @lend
     end
 
     def destroy
